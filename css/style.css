@@ -13,3 +13,29 @@ h1, h2, h3 {
 		font-family: 'Montserrat', sans-serif;
 
 }
+
+
+.btn-primary {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+ color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+.btn-primary:hover {
+  color: #000;
+  background-color: transparent;
+  border-color: #000;
+  border:  2px solid #000;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
