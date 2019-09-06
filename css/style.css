@@ -25,6 +25,9 @@ p {
 img {
 	width: 100%;
 }
+.show-mb {
+	display: none;
+}
 .pad {
 	padding: 40px;
 }
@@ -32,6 +35,7 @@ img {
 	padding-right: 0;
 	padding-left: 0;
 }
+/* Section 1 */
 .cta {
 	padding-top: 40px;
 }
@@ -44,6 +48,8 @@ img {
 .cta a:last-child {
 	padding:10px 29px 0px;
 }
+
+/* Section 2 */
 .cta-2 {
 	padding: 30px;
 	margin-top: 120px;
@@ -58,11 +64,12 @@ img {
 	color: #000;
 	font-size: 12px;
 }
-.four-images {
-}
+
 .four-images .col-md-2 img {
 	max-width: 150px;
-	min-width: 150px;
+	min-width: 100px;
+	float: left;
+	margin-right: 20px;
 }
 .four-images .col-md-2:nth-child(odd) img{
 	margin-top: 40px;
@@ -76,6 +83,91 @@ img {
 .four-images .col-md-2:last-child img{
    padding-top: 80px;
 }
+
+/* Section 3 */
+.cta-3 {
+	padding-top: 3em;
+}
+.cta-3 h1{
+   font-weight: 300;
+   font-size: 62px;
+}
+.cta-3 strong {
+	font-weight: 700;
+}
+.cta-3 p{
+	padding-bottom: 20px
+}
+.cta-3 p:last-child {
+	padding-top: 5em;
+}
+.cta-3 a {
+	min-width: 218px;
+}
+.cta3-bag {
+	position: relative;
+	max-width: 270px;
+    left: 8em;
+}
+.cta3-model {
+  position: relative;
+  max-width: 450px;
+  bottom: 50px;
+}
+
+/*section 4*/
+.cta-4 {
+	padding: 70px 34px;
+    margin: 10em 6em 10em;
+    position: relative;
+    z-index: 1;
+    left: 6em;
+    height: 390px;
+}
+.cta-4 h2 {
+	font-size: 22px;
+	font-weight: 700;
+}
+.cta-4 p{
+	font-size: 22px;
+	font-weight: 300;
+}
+.cta-4 span {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+}
+.cta-4 a {
+	min-width: 100px;
+}
+.cta-5 a {
+	color: #000;
+	font-weight: 700;
+}
+
+/*section 5 */
+.pursebg {
+	background: url('../images/handbags.jpg') no-repeat center;
+	-webkit-background-size: 95% auto;
+   -moz-background-size: 95% auto;
+   -o-background-size: 95% auto;
+    background-size: 95% auto;
+    height: 410px;
+
+}
+
+.jewelrybg {
+	background: url('../images/jewelry.jpg') no-repeat center;
+	-webkit-background-size: 100% auto;
+   -moz-background-size: 95% auto;
+   -o-background-size: 95% auto;
+    background-size: 95% auto;
+    height: 410px;
+
+}
+
+
+
 /*Buttons*/
 .btn-primary {
   color: #fff;
@@ -113,24 +205,116 @@ img {
   margin-right: auto;
   text-align: center;
 }
+.section {
+	padding-bottom: 40px;
+}
 
 /*background colors*/
 .grey {
 	background-color: #f0f0f0;
+	margin-bottom: 20px;
 }
 .beige {
 	background-color:#ede1cb !important;
 }
 .pink {
 	background-color:#ecd1c8;
+	    max-height: 420px;
+    margin-bottom: 60px;
 }
 
 
 /*media query*/
 @media (max-width: 767px) {
-	.four-images {
-		clear: both;
-		min-width: 650px;
-		overflow-x: scroll;
+	.show-mb {
+		display: block;
+		margin-bottom: 0px;
 	}
+	.hidden-mb {
+		display: none;
+	}
+	
+	.section {
+		padding-bottom: 0px;
+
+	}
+	.cta-2 {
+		margin-top: 20px;
+		width: 100%;
+	}
+	.section.pad {
+		padding: 0px;
+	}
+	.four-images {
+		width: 400px;
+		overflow-x: scroll;
+		height: 200px;
+	}
+	.four-images .col-md-2 img {
+	max-width: 150px;
+	float: left;
+	margin-right: 20px;
 }
+.pink {
+	max-height: 450px;
+	padding-bottom: 20px;
+	margin-bottom: 7em;
+}
+.cta-4 {
+	    margin: 0 1em;
+    padding: 70px 34px;
+    z-index: 1;
+    height: 390px;
+    left: 0;
+    }
+.cta-3 a {
+	min-width: 140px;
+}
+.cta-3 {
+   left: -3em;
+   top: -2em;
+}
+.pursebg, .jewelrybg{
+	width: 100%;
+    margin: 10px auto;
+    height: 300px;
+    background-position: -2px -10px;
+    -webkit-background-size: 100% auto;
+   -moz-background-size: 120% auto;
+   -o-background-size: 120% auto;
+    background-size: 120% auto;
+
+}
+.cta-3 p:last-child {
+    padding-top: 5em;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    margin-left: 40px;
+    }
+.cta3-model {
+	position: relative;
+    max-width: 297px;
+    bottom: 2em;
+    float: left;
+    left: -2em;
+}
+.cta-4 img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+   .hidden-sm-down.cta3-bag {
+   	display: none;
+   }
+}
+@media (max-width: 400px) {
+	.pursebg, .jewelrybg{
+	width: 100%;
+    margin: 10px auto;
+    height: 300px;
+
+
+}
+	}
