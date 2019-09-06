@@ -44,6 +44,36 @@ img {
 .cta a:last-child {
 	padding:10px 29px 0px;
 }
+.cta-2 {
+	padding: 20px;
+	margin-top: 120px;
+	margin-right: 20px;
+}
+
+.cta-2 h1 {
+
+
+}
+.cta-2 a {
+	color: #000;
+	font-size: 12px;
+}
+.four-images .col-md-2 img {
+	max-width: 150px;
+	min-width: 150px;
+}
+.four-images .col-md-2:nth-child(odd) img{
+	margin-top: 40px;
+}
+.four-images .col-md-2:nth-child(even) img {
+  padding-top: 110px;
+}
+.four-images .col-md-2:first-child img{
+   padding-top: 20px;
+}
+.four-images .col-md-2:last-child img{
+   padding-top: 80px;
+}
 /*Buttons*/
 .btn-primary {
   color: #fff;
