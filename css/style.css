@@ -9,22 +9,64 @@ body {
 	font-family: 'Montserrat', sans-serif;
 
 }
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
 h1, h2, h3 {
 		font-family: 'Montserrat', sans-serif;
 
 }
+p {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
 
-
+}
+img {
+	width: 100%;
+}
+.pad {
+	padding: 40px;
+}
+.nopad {
+	padding-right: 0;
+	padding-left: 0;
+}
+.cta {
+	padding-top: 40px;
+}
+.cta p {
+	padding: 10px 0;
+}
+.cta h1 {
+	font-size: 42px;
+}
+.cta a:last-child {
+	padding:10px 29px 0px;
+}
+/*Buttons*/
 .btn-primary {
   color: #fff;
   background-color: #000;
   border-color: #000;
+  border-radius: 0px !important;
+  margin-bottom: 15px;
+    margin-right: 10px;
+    max-width: 180px;
+    white-space: inherit;
+    font-size: 14px;
+    height: 54px;
+    margin: 7px;
+    line-height: 14px;
+    vertical-align: text-bottom;
+    padding-top: 18px;
 }
 .btn-primary:focus,
 .btn-primary.focus {
- color: #fff;
-  background-color: #000;
+  color: #000;
+  background-color: transparent;
   border-color: #000;
+  border:  2px solid #000;
 }
 .btn-primary:hover {
   color: #000;
@@ -32,10 +74,21 @@ h1, h2, h3 {
   border-color: #000;
   border:  2px solid #000;
 }
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  color: #fff;
-  background-color: #000;
-  border-color: #000;
+/*position */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/*background colors*/
+.grey {
+	background-color: #f0f0f0;
+}
+.beige {
+	background-color:#ede1cb !important;
+}
+.pink {
+	background-color:#ecd1c8;
 }
