@@ -45,18 +45,20 @@ img {
 	padding:10px 29px 0px;
 }
 .cta-2 {
-	padding: 20px;
+	padding: 30px;
 	margin-top: 120px;
 	margin-right: 20px;
 }
 
 .cta-2 h1 {
-
+  font-weight: 400;
 
 }
 .cta-2 a {
 	color: #000;
 	font-size: 12px;
+}
+.four-images {
 }
 .four-images .col-md-2 img {
 	max-width: 150px;
@@ -121,4 +123,14 @@ img {
 }
 .pink {
 	background-color:#ecd1c8;
+}
+
+
+/*media query*/
+@media (max-width: 767px) {
+	.four-images {
+		clear: both;
+		min-width: 650px;
+		overflow-x: scroll;
+	}
 }
